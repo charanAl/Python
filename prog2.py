@@ -5,7 +5,7 @@ class College:
         self.age = age
         self.marks = marks
 
-s1 = College("Arthi", 20, 85)
+s1 = College("Angle", 20, 85)
 s2 = College('Aravind', 22, 90)
 s3 = College('Charan', 20, 98)
 
@@ -14,4 +14,5 @@ print(s3.name)
 print(s1.College_name)
 print(s2.name)
 print(s2.College_name)
+
         
