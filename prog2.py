@@ -1,18 +1,16 @@
-class College:
-    College_name = "Aurora's Technological Institutef"
-    def __init__(self, name, age, marks):
-        self.name = name
-        self.age = age
-        self.marks = marks
+class BankAccount:
+    def __init__(self):
+        self.account_number = '876548765543'
+        self.__ATM_pin = 1436
 
-s1 = College("Angle", 20, 85)
-s2 = College('Aravind', 22, 90)
-s3 = College('Charan', 20, 98)
+    def view_atm_pin(self):
+        return self.__ATM_pin                 #getter()
+    
+    def change_atm_pin(self, new_pin):
+        self.__ATM_pin= new_pin                 #setter()
 
-print(s1.name)
-print(s3.name)
-print(s1.College_name)
-print(s2.name)
-print(s2.College_name)
-
-        
+a1=BankAccount()
+print(a1.account_number)
+print(a1.view_atm_pin())
+a1.change_atm_pin('0098')
+print(a1.view_atm_pin())

@@ -1,16 +1,10 @@
-class Car:
-    def __init__(self, brand, color, year):
-        self.brand = brand
-        self.color = color
-        self.year = year
-    def display_info(self):
-        print(self.brand, self.color, self.year)
+class Teacher:
+    def __init__(self):
+        self.name = 'Charan'
+        self.__salary = 600000
 
-obj = Car('TATAnano','blue',2025)
-obj1 = Car('BMW','black',2020)
-obj3 = Car('Audi','white',2023)
-obj.display_info()
-obj1.display_info()
-obj3.display_info()
-# print(obj.brand)
-# print(obj.color)
+    def get_salary(self):
+        return self.__salary
+a1 = Teacher()
+print(a1.name)
+print(a1.get_salary())
